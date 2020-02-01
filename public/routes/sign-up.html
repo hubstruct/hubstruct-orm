@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HubStruct</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.5.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.5.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.5.2/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.5.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.5.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="/styles/material-input.css">
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>HubStruct Signin</h1>
+      <p>HubStruct is in early alpha stages right now, learn more at hubstruct.com</p>
+      <div class="form-control">
+        <input id='organizationField' type="text" required />
+        <span class="bar"></span>
+        <label for="Organization Name">Organization Name</label>
+      </div>
+      <div class="form-control">
+        <input id='projectField' type="text" required />
+        <span class="bar"></span>
+        <label for="First Project Name">First Project Name</label>
+      </div>
+      <a title="Click to sign up" onclick="signUp(); return false;" xhref="enable-javascript-warning">Sign Up</a>
+      <a href="/sign-in">Sign In</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script defer src="/scripts/index.js"></script>
+    <script defer src="/scripts/authentication.js"></script>
+    <script defer src="/scripts/sign-up.js"></script>
+  </body>
+</html>

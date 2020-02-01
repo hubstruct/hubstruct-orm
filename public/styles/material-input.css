@@ -1,0 +1,79 @@
+form {
+    font-family: arial;
+    font-weight:700;
+}
+
+.form-control {
+    position:relative;
+    margin-top:40px;
+    width:100%;
+    margin-bottom: 10px;
+}
+  
+  .form-control input {
+    border:none;
+    border-bottom:3px solid #34495e;
+    padding:10px 0;
+    width:100%;
+    display:block;
+    font-size:16px;
+}
+  
+.form-control input:focus{
+    border:none;
+    outline:none;
+}
+  
+.form-control input:focus ~ label, .form-control input:valid ~ label  {
+    top:-10px;
+    font-size:12px;
+    left:2px;
+    color:#111;
+}
+  
+.form-control label {
+    position:absolute;
+    top:8px;
+    left:5px;
+    font-size:16px;
+    color:#333;
+    transition: 0.3s ease all;
+    -webkit-transition:0.3s ease all;
+}
+  
+.form-control .bar {
+    position:relative;
+    width:100%;
+    display:block;
+}
+  
+.form-control .bar:before, .bar:after 	{
+    content:'';
+    height:3px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+  
+.form-control .bar:before {
+    left:50%;
+}
+  
+.form-control .bar:after {
+    right:50%; 
+}
+  
+.form-control input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+  
+.form-control input:valid ~ .bar:before, input:valid ~ .bar:after{
+    background:#2ecc71;  
+}
+  
+.form-control input:invalid ~ .bar:before, input:invalid ~ .bar:after{
+    background:#e74c3c;  
+}

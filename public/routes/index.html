@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HubStruct</title>
+
+    <!-- Material Design Theming -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.5.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.5.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.5.2/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.5.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.5.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/index.css">
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>HubStruct Home</h1>
+      <p>HubStruct is in early alpha stages right now, learn more at hubstruct.com</p>
+      <img id='profile'>
+      <a title="Click to sign out" onclick="signOut(); return false;" xhref="enable-javascript-warning">Sign Out</a>
+      <hr>
+      <a href="/sign-up">Query</a>
+      <hr>
+      <a href="/query">Query</a>
+      <a href="/view">View</a>
+      <a href="/create">Create</a>
+
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script defer src="/scripts/index.js"> </script>
+    <script defer src="/scripts/authentication.js"></script>
+    <script defer src="/scripts/account.js"> </script>
+    <script defer src="/scripts/sign-out.js"> </script>
+  </body>
+</html>
